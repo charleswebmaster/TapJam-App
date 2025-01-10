@@ -1,0 +1,584 @@
+[03-Jul-2024 03:12:09 UTC] PHP Warning:  Undefined variable $conn in /home/charulpd/public_html/tapjamweb/referral_process.php on line 10
+[03-Jul-2024 03:12:09 UTC] PHP Warning:  Attempt to read property "connect_error" on null in /home/charulpd/public_html/tapjamweb/referral_process.php on line 10
+[03-Jul-2024 03:12:09 UTC] PHP Warning:  Undefined variable $conn in /home/charulpd/public_html/tapjamweb/referral_process.php on line 21
+[03-Jul-2024 03:12:09 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/charulpd/public_html/tapjamweb/referral_process.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/charulpd/public_html/tapjamweb/referral_process.php on line 21
+[03-Jul-2024 03:14:14 UTC] PHP Warning:  Undefined variable $conn in /home/charulpd/public_html/tapjamweb/referral_process.php on line 10
+[03-Jul-2024 03:14:14 UTC] PHP Warning:  Attempt to read property "connect_error" on null in /home/charulpd/public_html/tapjamweb/referral_process.php on line 10
+[03-Jul-2024 03:14:14 UTC] PHP Warning:  Undefined variable $conn in /home/charulpd/public_html/tapjamweb/referral_process.php on line 21
+[03-Jul-2024 03:14:14 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/charulpd/public_html/tapjamweb/referral_process.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/charulpd/public_html/tapjamweb/referral_process.php on line 21
+[03-Jul-2024 03:24:09 UTC] PHP Warning:  Undefined variable $conn in /home/charulpd/public_html/tapjamweb/referral_process.php on line 10
+[03-Jul-2024 03:24:09 UTC] PHP Warning:  Attempt to read property "connect_error" on null in /home/charulpd/public_html/tapjamweb/referral_process.php on line 10
+[03-Jul-2024 03:24:09 UTC] PHP Warning:  Undefined variable $conn in /home/charulpd/public_html/tapjamweb/referral_process.php on line 21
+[03-Jul-2024 03:24:09 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/charulpd/public_html/tapjamweb/referral_process.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/charulpd/public_html/tapjamweb/referral_process.php on line 21
+[03-Jul-2024 03:29:56 UTC] PHP Warning:  Undefined variable $conn in /home/charulpd/public_html/tapjamweb/referral_process.php on line 10
+[03-Jul-2024 03:29:56 UTC] PHP Warning:  Attempt to read property "connect_error" on null in /home/charulpd/public_html/tapjamweb/referral_process.php on line 10
+[03-Jul-2024 03:29:56 UTC] PHP Warning:  Undefined variable $conn in /home/charulpd/public_html/tapjamweb/referral_process.php on line 21
+[03-Jul-2024 03:29:56 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/charulpd/public_html/tapjamweb/referral_process.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/charulpd/public_html/tapjamweb/referral_process.php on line 21
+[03-Jul-2024 03:30:51 UTC] PHP Warning:  Undefined variable $conn in /home/charulpd/public_html/tapjamweb/referral_process.php on line 10
+[03-Jul-2024 03:30:51 UTC] PHP Warning:  Attempt to read property "connect_error" on null in /home/charulpd/public_html/tapjamweb/referral_process.php on line 10
+[03-Jul-2024 03:30:51 UTC] PHP Warning:  Undefined variable $conn in /home/charulpd/public_html/tapjamweb/referral_process.php on line 21
+[03-Jul-2024 03:30:51 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/charulpd/public_html/tapjamweb/referral_process.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/charulpd/public_html/tapjamweb/referral_process.php on line 21
+[03-Jul-2024 04:41:01 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry 'Charles Onuoha' for key 'username' in /home/charulpd/public_html/tapjamweb/register.php:28
+Stack trace:
+#0 /home/charulpd/public_html/tapjamweb/register.php(28): mysqli->query('INSERT INTO use...')
+#1 {main}
+  thrown in /home/charulpd/public_html/tapjamweb/register.php on line 28
+[03-Jul-2024 04:56:22 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'taps' in 'field list' in /home/charulpd/public_html/tapjamweb/initialize_user.php:19
+Stack trace:
+#0 /home/charulpd/public_html/tapjamweb/initialize_user.php(19): mysqli->query('SELECT taps FRO...')
+#1 {main}
+  thrown in /home/charulpd/public_html/tapjamweb/initialize_user.php on line 19
+[03-Jul-2024 04:58:50 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'taps' in 'field list' in /home/charulpd/public_html/tapjamweb/initialize_user.php:19
+Stack trace:
+#0 /home/charulpd/public_html/tapjamweb/initialize_user.php(19): mysqli->query('SELECT taps FRO...')
+#1 {main}
+  thrown in /home/charulpd/public_html/tapjamweb/initialize_user.php on line 19
+[03-Jul-2024 04:58:55 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'taps' in 'field list' in /home/charulpd/public_html/tapjamweb/initialize_user.php:19
+Stack trace:
+#0 /home/charulpd/public_html/tapjamweb/initialize_user.php(19): mysqli->query('SELECT taps FRO...')
+#1 {main}
+  thrown in /home/charulpd/public_html/tapjamweb/initialize_user.php on line 19
+[03-Jul-2024 04:58:59 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'taps' in 'field list' in /home/charulpd/public_html/tapjamweb/initialize_user.php:19
+Stack trace:
+#0 /home/charulpd/public_html/tapjamweb/initialize_user.php(19): mysqli->query('SELECT taps FRO...')
+#1 {main}
+  thrown in /home/charulpd/public_html/tapjamweb/initialize_user.php on line 19
+[03-Jul-2024 04:59:01 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'taps' in 'field list' in /home/charulpd/public_html/tapjamweb/initialize_user.php:19
+Stack trace:
+#0 /home/charulpd/public_html/tapjamweb/initialize_user.php(19): mysqli->query('SELECT taps FRO...')
+#1 {main}
+  thrown in /home/charulpd/public_html/tapjamweb/initialize_user.php on line 19
+[03-Jul-2024 05:03:34 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'taps' in 'field list' in /home/charulpd/public_html/tapjamweb/initialize_user.php:19
+Stack trace:
+#0 /home/charulpd/public_html/tapjamweb/initialize_user.php(19): mysqli->query('SELECT taps FRO...')
+#1 {main}
+  thrown in /home/charulpd/public_html/tapjamweb/initialize_user.php on line 19
+[03-Jul-2024 05:04:05 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry 'Charles' for key 'username' in /home/charulpd/public_html/tapjamweb/register.php:28
+Stack trace:
+#0 /home/charulpd/public_html/tapjamweb/register.php(28): mysqli->query('INSERT INTO use...')
+#1 {main}
+  thrown in /home/charulpd/public_html/tapjamweb/register.php on line 28
+[03-Jul-2024 05:05:36 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'taps' in 'field list' in /home/charulpd/public_html/tapjamweb/initialize_user.php:19
+Stack trace:
+#0 /home/charulpd/public_html/tapjamweb/initialize_user.php(19): mysqli->query('SELECT taps FRO...')
+#1 {main}
+  thrown in /home/charulpd/public_html/tapjamweb/initialize_user.php on line 19
+[03-Jul-2024 05:05:40 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'taps' in 'field list' in /home/charulpd/public_html/tapjamweb/initialize_user.php:19
+Stack trace:
+#0 /home/charulpd/public_html/tapjamweb/initialize_user.php(19): mysqli->query('SELECT taps FRO...')
+#1 {main}
+  thrown in /home/charulpd/public_html/tapjamweb/initialize_user.php on line 19
+[03-Jul-2024 09:22:08 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'tap_count' in 'field list' in /home/charulpd/public_html/tapjamweb/referral_process.php:22
+Stack trace:
+#0 /home/charulpd/public_html/tapjamweb/referral_process.php(22): mysqli->query('UPDATE users SE...')
+#1 {main}
+  thrown in /home/charulpd/public_html/tapjamweb/referral_process.php on line 22
+[03-Jul-2024 09:22:38 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'tap_count' in 'field list' in /home/charulpd/public_html/tapjamweb/referral_process.php:22
+Stack trace:
+#0 /home/charulpd/public_html/tapjamweb/referral_process.php(22): mysqli->query('UPDATE users SE...')
+#1 {main}
+  thrown in /home/charulpd/public_html/tapjamweb/referral_process.php on line 22
+[03-Jul-2024 12:49:32 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/charulpd/public_html/tapjamweb/process_code.php on line 43
+[03-Jul-2024 13:02:01 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/charulpd/public_html/tapjamweb/process_code.php on line 43
+[03-Jul-2024 13:02:47 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/charulpd/public_html/tapjamweb/process_code.php on line 43
+[03-Jul-2024 13:08:47 UTC] PHP Warning:  Undefined array key "user_id" in /home/charulpd/public_html/tapjamweb/process_code.php on line 15
+[03-Jul-2024 13:08:47 UTC] PHP Warning:  Undefined array key "referral_code" in /home/charulpd/public_html/tapjamweb/process_code.php on line 16
+[03-Jul-2024 13:08:47 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'referral_code' in 'where clause' in /home/charulpd/public_html/tapjamweb/process_code.php:19
+Stack trace:
+#0 /home/charulpd/public_html/tapjamweb/process_code.php(19): mysqli->prepare('SELECT user_id ...')
+#1 {main}
+  thrown in /home/charulpd/public_html/tapjamweb/process_code.php on line 19
+[03-Jul-2024 13:08:51 UTC] PHP Warning:  Undefined array key "user_id" in /home/charulpd/public_html/tapjamweb/process_code.php on line 15
+[03-Jul-2024 13:08:51 UTC] PHP Warning:  Undefined array key "referral_code" in /home/charulpd/public_html/tapjamweb/process_code.php on line 16
+[03-Jul-2024 13:08:51 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'referral_code' in 'where clause' in /home/charulpd/public_html/tapjamweb/process_code.php:19
+Stack trace:
+#0 /home/charulpd/public_html/tapjamweb/process_code.php(19): mysqli->prepare('SELECT user_id ...')
+#1 {main}
+  thrown in /home/charulpd/public_html/tapjamweb/process_code.php on line 19
+[03-Jul-2024 13:08:57 UTC] PHP Warning:  Undefined array key "user_id" in /home/charulpd/public_html/tapjamweb/process_code.php on line 15
+[03-Jul-2024 13:08:57 UTC] PHP Warning:  Undefined array key "referral_code" in /home/charulpd/public_html/tapjamweb/process_code.php on line 16
+[03-Jul-2024 13:08:57 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'referral_code' in 'where clause' in /home/charulpd/public_html/tapjamweb/process_code.php:19
+Stack trace:
+#0 /home/charulpd/public_html/tapjamweb/process_code.php(19): mysqli->prepare('SELECT user_id ...')
+#1 {main}
+  thrown in /home/charulpd/public_html/tapjamweb/process_code.php on line 19
+[03-Jul-2024 13:08:58 UTC] PHP Warning:  Undefined array key "user_id" in /home/charulpd/public_html/tapjamweb/process_code.php on line 15
+[03-Jul-2024 13:08:58 UTC] PHP Warning:  Undefined array key "referral_code" in /home/charulpd/public_html/tapjamweb/process_code.php on line 16
+[03-Jul-2024 13:08:58 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'referral_code' in 'where clause' in /home/charulpd/public_html/tapjamweb/process_code.php:19
+Stack trace:
+#0 /home/charulpd/public_html/tapjamweb/process_code.php(19): mysqli->prepare('SELECT user_id ...')
+#1 {main}
+  thrown in /home/charulpd/public_html/tapjamweb/process_code.php on line 19
+[03-Jul-2024 13:08:59 UTC] PHP Warning:  Undefined array key "user_id" in /home/charulpd/public_html/tapjamweb/process_code.php on line 15
+[03-Jul-2024 13:08:59 UTC] PHP Warning:  Undefined array key "referral_code" in /home/charulpd/public_html/tapjamweb/process_code.php on line 16
+[03-Jul-2024 13:08:59 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'referral_code' in 'where clause' in /home/charulpd/public_html/tapjamweb/process_code.php:19
+Stack trace:
+#0 /home/charulpd/public_html/tapjamweb/process_code.php(19): mysqli->prepare('SELECT user_id ...')
+#1 {main}
+  thrown in /home/charulpd/public_html/tapjamweb/process_code.php on line 19
+[03-Jul-2024 13:09:21 UTC] PHP Warning:  Undefined array key "user_id" in /home/charulpd/public_html/tapjamweb/process_code.php on line 15
+[03-Jul-2024 13:09:21 UTC] PHP Warning:  Undefined array key "referral_code" in /home/charulpd/public_html/tapjamweb/process_code.php on line 16
+[03-Jul-2024 13:09:21 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'referral_code' in 'where clause' in /home/charulpd/public_html/tapjamweb/process_code.php:19
+Stack trace:
+#0 /home/charulpd/public_html/tapjamweb/process_code.php(19): mysqli->prepare('SELECT user_id ...')
+#1 {main}
+  thrown in /home/charulpd/public_html/tapjamweb/process_code.php on line 19
+[03-Jul-2024 13:09:21 UTC] PHP Warning:  Undefined array key "user_id" in /home/charulpd/public_html/tapjamweb/process_code.php on line 15
+[03-Jul-2024 13:09:21 UTC] PHP Warning:  Undefined array key "referral_code" in /home/charulpd/public_html/tapjamweb/process_code.php on line 16
+[03-Jul-2024 13:09:21 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'referral_code' in 'where clause' in /home/charulpd/public_html/tapjamweb/process_code.php:19
+Stack trace:
+#0 /home/charulpd/public_html/tapjamweb/process_code.php(19): mysqli->prepare('SELECT user_id ...')
+#1 {main}
+  thrown in /home/charulpd/public_html/tapjamweb/process_code.php on line 19
+[03-Jul-2024 13:09:21 UTC] PHP Warning:  Undefined array key "user_id" in /home/charulpd/public_html/tapjamweb/process_code.php on line 15
+[03-Jul-2024 13:09:21 UTC] PHP Warning:  Undefined array key "referral_code" in /home/charulpd/public_html/tapjamweb/process_code.php on line 16
+[03-Jul-2024 13:09:21 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'referral_code' in 'where clause' in /home/charulpd/public_html/tapjamweb/process_code.php:19
+Stack trace:
+#0 /home/charulpd/public_html/tapjamweb/process_code.php(19): mysqli->prepare('SELECT user_id ...')
+#1 {main}
+  thrown in /home/charulpd/public_html/tapjamweb/process_code.php on line 19
+[03-Jul-2024 13:09:22 UTC] PHP Warning:  Undefined array key "user_id" in /home/charulpd/public_html/tapjamweb/process_code.php on line 15
+[03-Jul-2024 13:09:22 UTC] PHP Warning:  Undefined array key "referral_code" in /home/charulpd/public_html/tapjamweb/process_code.php on line 16
+[03-Jul-2024 13:09:22 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'referral_code' in 'where clause' in /home/charulpd/public_html/tapjamweb/process_code.php:19
+Stack trace:
+#0 /home/charulpd/public_html/tapjamweb/process_code.php(19): mysqli->prepare('SELECT user_id ...')
+#1 {main}
+  thrown in /home/charulpd/public_html/tapjamweb/process_code.php on line 19
+[03-Jul-2024 13:09:22 UTC] PHP Warning:  Undefined array key "user_id" in /home/charulpd/public_html/tapjamweb/process_code.php on line 15
+[03-Jul-2024 13:09:22 UTC] PHP Warning:  Undefined array key "referral_code" in /home/charulpd/public_html/tapjamweb/process_code.php on line 16
+[03-Jul-2024 13:09:22 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'referral_code' in 'where clause' in /home/charulpd/public_html/tapjamweb/process_code.php:19
+Stack trace:
+#0 /home/charulpd/public_html/tapjamweb/process_code.php(19): mysqli->prepare('SELECT user_id ...')
+#1 {main}
+  thrown in /home/charulpd/public_html/tapjamweb/process_code.php on line 19
+[03-Jul-2024 13:09:22 UTC] PHP Warning:  Undefined array key "user_id" in /home/charulpd/public_html/tapjamweb/process_code.php on line 15
+[03-Jul-2024 13:09:22 UTC] PHP Warning:  Undefined array key "referral_code" in /home/charulpd/public_html/tapjamweb/process_code.php on line 16
+[03-Jul-2024 13:09:22 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'referral_code' in 'where clause' in /home/charulpd/public_html/tapjamweb/process_code.php:19
+Stack trace:
+#0 /home/charulpd/public_html/tapjamweb/process_code.php(19): mysqli->prepare('SELECT user_id ...')
+#1 {main}
+  thrown in /home/charulpd/public_html/tapjamweb/process_code.php on line 19
+[03-Jul-2024 13:10:35 UTC] PHP Warning:  Undefined array key "user_id" in /home/charulpd/public_html/tapjamweb/process_code.php on line 15
+[03-Jul-2024 13:10:35 UTC] PHP Warning:  Undefined array key "referral_code" in /home/charulpd/public_html/tapjamweb/process_code.php on line 16
+[03-Jul-2024 13:10:35 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'referral_code' in 'where clause' in /home/charulpd/public_html/tapjamweb/process_code.php:19
+Stack trace:
+#0 /home/charulpd/public_html/tapjamweb/process_code.php(19): mysqli->prepare('SELECT user_id ...')
+#1 {main}
+  thrown in /home/charulpd/public_html/tapjamweb/process_code.php on line 19
+[03-Jul-2024 13:10:36 UTC] PHP Warning:  Undefined array key "user_id" in /home/charulpd/public_html/tapjamweb/process_code.php on line 15
+[03-Jul-2024 13:10:36 UTC] PHP Warning:  Undefined array key "referral_code" in /home/charulpd/public_html/tapjamweb/process_code.php on line 16
+[03-Jul-2024 13:10:36 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'referral_code' in 'where clause' in /home/charulpd/public_html/tapjamweb/process_code.php:19
+Stack trace:
+#0 /home/charulpd/public_html/tapjamweb/process_code.php(19): mysqli->prepare('SELECT user_id ...')
+#1 {main}
+  thrown in /home/charulpd/public_html/tapjamweb/process_code.php on line 19
+[03-Jul-2024 13:10:37 UTC] PHP Warning:  Undefined array key "user_id" in /home/charulpd/public_html/tapjamweb/process_code.php on line 15
+[03-Jul-2024 13:10:37 UTC] PHP Warning:  Undefined array key "referral_code" in /home/charulpd/public_html/tapjamweb/process_code.php on line 16
+[03-Jul-2024 13:10:37 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'referral_code' in 'where clause' in /home/charulpd/public_html/tapjamweb/process_code.php:19
+Stack trace:
+#0 /home/charulpd/public_html/tapjamweb/process_code.php(19): mysqli->prepare('SELECT user_id ...')
+#1 {main}
+  thrown in /home/charulpd/public_html/tapjamweb/process_code.php on line 19
+[03-Jul-2024 13:12:45 UTC] PHP Warning:  Undefined array key "user_id" in /home/charulpd/public_html/tapjamweb/process_code.php on line 15
+[03-Jul-2024 13:12:45 UTC] PHP Warning:  Undefined array key "referral_code" in /home/charulpd/public_html/tapjamweb/process_code.php on line 16
+[03-Jul-2024 13:12:45 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'referral_code' in 'where clause' in /home/charulpd/public_html/tapjamweb/process_code.php:19
+Stack trace:
+#0 /home/charulpd/public_html/tapjamweb/process_code.php(19): mysqli->prepare('SELECT user_id ...')
+#1 {main}
+  thrown in /home/charulpd/public_html/tapjamweb/process_code.php on line 19
+[03-Jul-2024 13:12:45 UTC] PHP Warning:  Undefined array key "user_id" in /home/charulpd/public_html/tapjamweb/process_code.php on line 15
+[03-Jul-2024 13:12:45 UTC] PHP Warning:  Undefined array key "referral_code" in /home/charulpd/public_html/tapjamweb/process_code.php on line 16
+[03-Jul-2024 13:12:45 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'referral_code' in 'where clause' in /home/charulpd/public_html/tapjamweb/process_code.php:19
+Stack trace:
+#0 /home/charulpd/public_html/tapjamweb/process_code.php(19): mysqli->prepare('SELECT user_id ...')
+#1 {main}
+  thrown in /home/charulpd/public_html/tapjamweb/process_code.php on line 19
+[03-Jul-2024 13:12:48 UTC] PHP Warning:  Undefined array key "user_id" in /home/charulpd/public_html/tapjamweb/process_code.php on line 15
+[03-Jul-2024 13:12:48 UTC] PHP Warning:  Undefined array key "referral_code" in /home/charulpd/public_html/tapjamweb/process_code.php on line 16
+[03-Jul-2024 13:12:48 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'referral_code' in 'where clause' in /home/charulpd/public_html/tapjamweb/process_code.php:19
+Stack trace:
+#0 /home/charulpd/public_html/tapjamweb/process_code.php(19): mysqli->prepare('SELECT user_id ...')
+#1 {main}
+  thrown in /home/charulpd/public_html/tapjamweb/process_code.php on line 19
+[03-Jul-2024 13:12:50 UTC] PHP Warning:  Undefined array key "user_id" in /home/charulpd/public_html/tapjamweb/process_code.php on line 15
+[03-Jul-2024 13:12:50 UTC] PHP Warning:  Undefined array key "referral_code" in /home/charulpd/public_html/tapjamweb/process_code.php on line 16
+[03-Jul-2024 13:12:50 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'referral_code' in 'where clause' in /home/charulpd/public_html/tapjamweb/process_code.php:19
+Stack trace:
+#0 /home/charulpd/public_html/tapjamweb/process_code.php(19): mysqli->prepare('SELECT user_id ...')
+#1 {main}
+  thrown in /home/charulpd/public_html/tapjamweb/process_code.php on line 19
+[03-Jul-2024 13:12:50 UTC] PHP Warning:  Undefined array key "user_id" in /home/charulpd/public_html/tapjamweb/process_code.php on line 15
+[03-Jul-2024 13:12:50 UTC] PHP Warning:  Undefined array key "referral_code" in /home/charulpd/public_html/tapjamweb/process_code.php on line 16
+[03-Jul-2024 13:12:50 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'referral_code' in 'where clause' in /home/charulpd/public_html/tapjamweb/process_code.php:19
+Stack trace:
+#0 /home/charulpd/public_html/tapjamweb/process_code.php(19): mysqli->prepare('SELECT user_id ...')
+#1 {main}
+  thrown in /home/charulpd/public_html/tapjamweb/process_code.php on line 19
+[03-Jul-2024 13:14:56 UTC] PHP Warning:  Undefined array key "user_id" in /home/charulpd/public_html/tapjamweb/process_code.php on line 15
+[03-Jul-2024 13:14:56 UTC] PHP Warning:  Undefined array key "referral_code" in /home/charulpd/public_html/tapjamweb/process_code.php on line 16
+[03-Jul-2024 13:14:56 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'referral_code' in 'where clause' in /home/charulpd/public_html/tapjamweb/process_code.php:19
+Stack trace:
+#0 /home/charulpd/public_html/tapjamweb/process_code.php(19): mysqli->prepare('SELECT user_id ...')
+#1 {main}
+  thrown in /home/charulpd/public_html/tapjamweb/process_code.php on line 19
+[03-Jul-2024 13:15:00 UTC] PHP Warning:  Undefined array key "user_id" in /home/charulpd/public_html/tapjamweb/process_code.php on line 15
+[03-Jul-2024 13:15:00 UTC] PHP Warning:  Undefined array key "referral_code" in /home/charulpd/public_html/tapjamweb/process_code.php on line 16
+[03-Jul-2024 13:15:00 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'referral_code' in 'where clause' in /home/charulpd/public_html/tapjamweb/process_code.php:19
+Stack trace:
+#0 /home/charulpd/public_html/tapjamweb/process_code.php(19): mysqli->prepare('SELECT user_id ...')
+#1 {main}
+  thrown in /home/charulpd/public_html/tapjamweb/process_code.php on line 19
+[03-Jul-2024 13:15:01 UTC] PHP Warning:  Undefined array key "user_id" in /home/charulpd/public_html/tapjamweb/process_code.php on line 15
+[03-Jul-2024 13:15:01 UTC] PHP Warning:  Undefined array key "referral_code" in /home/charulpd/public_html/tapjamweb/process_code.php on line 16
+[03-Jul-2024 13:15:01 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'referral_code' in 'where clause' in /home/charulpd/public_html/tapjamweb/process_code.php:19
+Stack trace:
+#0 /home/charulpd/public_html/tapjamweb/process_code.php(19): mysqli->prepare('SELECT user_id ...')
+#1 {main}
+  thrown in /home/charulpd/public_html/tapjamweb/process_code.php on line 19
+[03-Jul-2024 13:15:16 UTC] PHP Warning:  Undefined array key "user_id" in /home/charulpd/public_html/tapjamweb/process_code.php on line 15
+[03-Jul-2024 13:15:16 UTC] PHP Warning:  Undefined array key "referral_code" in /home/charulpd/public_html/tapjamweb/process_code.php on line 16
+[03-Jul-2024 13:15:16 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'referral_code' in 'where clause' in /home/charulpd/public_html/tapjamweb/process_code.php:19
+Stack trace:
+#0 /home/charulpd/public_html/tapjamweb/process_code.php(19): mysqli->prepare('SELECT user_id ...')
+#1 {main}
+  thrown in /home/charulpd/public_html/tapjamweb/process_code.php on line 19
+[03-Jul-2024 13:15:16 UTC] PHP Warning:  Undefined array key "user_id" in /home/charulpd/public_html/tapjamweb/process_code.php on line 15
+[03-Jul-2024 13:15:16 UTC] PHP Warning:  Undefined array key "referral_code" in /home/charulpd/public_html/tapjamweb/process_code.php on line 16
+[03-Jul-2024 13:15:16 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'referral_code' in 'where clause' in /home/charulpd/public_html/tapjamweb/process_code.php:19
+Stack trace:
+#0 /home/charulpd/public_html/tapjamweb/process_code.php(19): mysqli->prepare('SELECT user_id ...')
+#1 {main}
+  thrown in /home/charulpd/public_html/tapjamweb/process_code.php on line 19
+[03-Jul-2024 13:15:16 UTC] PHP Warning:  Undefined array key "user_id" in /home/charulpd/public_html/tapjamweb/process_code.php on line 15
+[03-Jul-2024 13:15:16 UTC] PHP Warning:  Undefined array key "referral_code" in /home/charulpd/public_html/tapjamweb/process_code.php on line 16
+[03-Jul-2024 13:15:16 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'referral_code' in 'where clause' in /home/charulpd/public_html/tapjamweb/process_code.php:19
+Stack trace:
+#0 /home/charulpd/public_html/tapjamweb/process_code.php(19): mysqli->prepare('SELECT user_id ...')
+#1 {main}
+  thrown in /home/charulpd/public_html/tapjamweb/process_code.php on line 19
+[03-Jul-2024 13:15:17 UTC] PHP Warning:  Undefined array key "user_id" in /home/charulpd/public_html/tapjamweb/process_code.php on line 15
+[03-Jul-2024 13:15:17 UTC] PHP Warning:  Undefined array key "referral_code" in /home/charulpd/public_html/tapjamweb/process_code.php on line 16
+[03-Jul-2024 13:15:17 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'referral_code' in 'where clause' in /home/charulpd/public_html/tapjamweb/process_code.php:19
+Stack trace:
+#0 /home/charulpd/public_html/tapjamweb/process_code.php(19): mysqli->prepare('SELECT user_id ...')
+#1 {main}
+  thrown in /home/charulpd/public_html/tapjamweb/process_code.php on line 19
+[03-Jul-2024 13:15:17 UTC] PHP Warning:  Undefined array key "user_id" in /home/charulpd/public_html/tapjamweb/process_code.php on line 15
+[03-Jul-2024 13:15:17 UTC] PHP Warning:  Undefined array key "referral_code" in /home/charulpd/public_html/tapjamweb/process_code.php on line 16
+[03-Jul-2024 13:15:17 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'referral_code' in 'where clause' in /home/charulpd/public_html/tapjamweb/process_code.php:19
+Stack trace:
+#0 /home/charulpd/public_html/tapjamweb/process_code.php(19): mysqli->prepare('SELECT user_id ...')
+#1 {main}
+  thrown in /home/charulpd/public_html/tapjamweb/process_code.php on line 19
+[03-Jul-2024 13:15:17 UTC] PHP Warning:  Undefined array key "user_id" in /home/charulpd/public_html/tapjamweb/process_code.php on line 15
+[03-Jul-2024 13:15:17 UTC] PHP Warning:  Undefined array key "referral_code" in /home/charulpd/public_html/tapjamweb/process_code.php on line 16
+[03-Jul-2024 13:15:17 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'referral_code' in 'where clause' in /home/charulpd/public_html/tapjamweb/process_code.php:19
+Stack trace:
+#0 /home/charulpd/public_html/tapjamweb/process_code.php(19): mysqli->prepare('SELECT user_id ...')
+#1 {main}
+  thrown in /home/charulpd/public_html/tapjamweb/process_code.php on line 19
+[03-Jul-2024 13:15:21 UTC] PHP Warning:  Undefined array key "user_id" in /home/charulpd/public_html/tapjamweb/process_code.php on line 15
+[03-Jul-2024 13:15:21 UTC] PHP Warning:  Undefined array key "referral_code" in /home/charulpd/public_html/tapjamweb/process_code.php on line 16
+[03-Jul-2024 13:15:21 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'referral_code' in 'where clause' in /home/charulpd/public_html/tapjamweb/process_code.php:19
+Stack trace:
+#0 /home/charulpd/public_html/tapjamweb/process_code.php(19): mysqli->prepare('SELECT user_id ...')
+#1 {main}
+  thrown in /home/charulpd/public_html/tapjamweb/process_code.php on line 19
+[03-Jul-2024 13:15:22 UTC] PHP Warning:  Undefined array key "user_id" in /home/charulpd/public_html/tapjamweb/process_code.php on line 15
+[03-Jul-2024 13:15:22 UTC] PHP Warning:  Undefined array key "referral_code" in /home/charulpd/public_html/tapjamweb/process_code.php on line 16
+[03-Jul-2024 13:15:22 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'referral_code' in 'where clause' in /home/charulpd/public_html/tapjamweb/process_code.php:19
+Stack trace:
+#0 /home/charulpd/public_html/tapjamweb/process_code.php(19): mysqli->prepare('SELECT user_id ...')
+#1 {main}
+  thrown in /home/charulpd/public_html/tapjamweb/process_code.php on line 19
+[03-Jul-2024 13:15:23 UTC] PHP Warning:  Undefined array key "user_id" in /home/charulpd/public_html/tapjamweb/process_code.php on line 15
+[03-Jul-2024 13:15:23 UTC] PHP Warning:  Undefined array key "referral_code" in /home/charulpd/public_html/tapjamweb/process_code.php on line 16
+[03-Jul-2024 13:15:23 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'referral_code' in 'where clause' in /home/charulpd/public_html/tapjamweb/process_code.php:19
+Stack trace:
+#0 /home/charulpd/public_html/tapjamweb/process_code.php(19): mysqli->prepare('SELECT user_id ...')
+#1 {main}
+  thrown in /home/charulpd/public_html/tapjamweb/process_code.php on line 19
+[03-Jul-2024 13:48:06 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/charulpd/public_html/tapjamweb/process_code.php on line 32
+[03-Jul-2024 13:48:55 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/charulpd/public_html/tapjamweb/process_code.php on line 32
+[03-Jul-2024 13:52:04 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'charulpd_tapjamref.users' doesn't exist in /home/charulpd/public_html/tapjamweb/initialize_user.php:21
+Stack trace:
+#0 /home/charulpd/public_html/tapjamweb/initialize_user.php(21): mysqli->prepare('SELECT taps FRO...')
+#1 {main}
+  thrown in /home/charulpd/public_html/tapjamweb/initialize_user.php on line 21
+[03-Jul-2024 13:52:09 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'charulpd_tapjamref.referrals' doesn't exist in /home/charulpd/public_html/tapjamweb/generate_code.php:17
+Stack trace:
+#0 /home/charulpd/public_html/tapjamweb/generate_code.php(17): mysqli->query('SELECT referral...')
+#1 {main}
+  thrown in /home/charulpd/public_html/tapjamweb/generate_code.php on line 17
+[03-Jul-2024 13:52:13 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'charulpd_tapjamref.referrals' doesn't exist in /home/charulpd/public_html/tapjamweb/generate_code.php:17
+Stack trace:
+#0 /home/charulpd/public_html/tapjamweb/generate_code.php(17): mysqli->query('SELECT referral...')
+#1 {main}
+  thrown in /home/charulpd/public_html/tapjamweb/generate_code.php on line 17
+[03-Jul-2024 13:52:15 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'charulpd_tapjamref.referrals' doesn't exist in /home/charulpd/public_html/tapjamweb/generate_code.php:17
+Stack trace:
+#0 /home/charulpd/public_html/tapjamweb/generate_code.php(17): mysqli->query('SELECT referral...')
+#1 {main}
+  thrown in /home/charulpd/public_html/tapjamweb/generate_code.php on line 17
+[03-Jul-2024 13:52:16 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'charulpd_tapjamref.referrals' doesn't exist in /home/charulpd/public_html/tapjamweb/generate_code.php:17
+Stack trace:
+#0 /home/charulpd/public_html/tapjamweb/generate_code.php(17): mysqli->query('SELECT referral...')
+#1 {main}
+  thrown in /home/charulpd/public_html/tapjamweb/generate_code.php on line 17
+[03-Jul-2024 13:52:16 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'charulpd_tapjamref.referrals' doesn't exist in /home/charulpd/public_html/tapjamweb/generate_code.php:17
+Stack trace:
+#0 /home/charulpd/public_html/tapjamweb/generate_code.php(17): mysqli->query('SELECT referral...')
+#1 {main}
+  thrown in /home/charulpd/public_html/tapjamweb/generate_code.php on line 17
+[03-Jul-2024 13:52:17 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'charulpd_tapjamref.referrals' doesn't exist in /home/charulpd/public_html/tapjamweb/generate_code.php:17
+Stack trace:
+#0 /home/charulpd/public_html/tapjamweb/generate_code.php(17): mysqli->query('SELECT referral...')
+#1 {main}
+  thrown in /home/charulpd/public_html/tapjamweb/generate_code.php on line 17
+[03-Jul-2024 13:52:30 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'charulpd_tapjamref.users' doesn't exist in /home/charulpd/public_html/tapjamweb/initialize_user.php:21
+Stack trace:
+#0 /home/charulpd/public_html/tapjamweb/initialize_user.php(21): mysqli->prepare('SELECT taps FRO...')
+#1 {main}
+  thrown in /home/charulpd/public_html/tapjamweb/initialize_user.php on line 21
+[03-Jul-2024 13:52:58 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'charulpd_tapjamref.users' doesn't exist in /home/charulpd/public_html/tapjamweb/initialize_user.php:21
+Stack trace:
+#0 /home/charulpd/public_html/tapjamweb/initialize_user.php(21): mysqli->prepare('SELECT taps FRO...')
+#1 {main}
+  thrown in /home/charulpd/public_html/tapjamweb/initialize_user.php on line 21
+[03-Jul-2024 13:52:59 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'charulpd_tapjamref.users' doesn't exist in /home/charulpd/public_html/tapjamweb/initialize_user.php:21
+Stack trace:
+#0 /home/charulpd/public_html/tapjamweb/initialize_user.php(21): mysqli->prepare('SELECT taps FRO...')
+#1 {main}
+  thrown in /home/charulpd/public_html/tapjamweb/initialize_user.php on line 21
+[03-Jul-2024 13:53:01 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'charulpd_tapjamref.referrals' doesn't exist in /home/charulpd/public_html/tapjamweb/generate_code.php:17
+Stack trace:
+#0 /home/charulpd/public_html/tapjamweb/generate_code.php(17): mysqli->query('SELECT referral...')
+#1 {main}
+  thrown in /home/charulpd/public_html/tapjamweb/generate_code.php on line 17
+[03-Jul-2024 13:53:03 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'charulpd_tapjamref.referrals' doesn't exist in /home/charulpd/public_html/tapjamweb/generate_code.php:17
+Stack trace:
+#0 /home/charulpd/public_html/tapjamweb/generate_code.php(17): mysqli->query('SELECT referral...')
+#1 {main}
+  thrown in /home/charulpd/public_html/tapjamweb/generate_code.php on line 17
+[03-Jul-2024 13:53:18 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'charulpd_tapjamref.referrals' doesn't exist in /home/charulpd/public_html/tapjamweb/generate_code.php:17
+Stack trace:
+#0 /home/charulpd/public_html/tapjamweb/generate_code.php(17): mysqli->query('SELECT referral...')
+#1 {main}
+  thrown in /home/charulpd/public_html/tapjamweb/generate_code.php on line 17
+[03-Jul-2024 13:53:20 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'charulpd_tapjamref.referrals' doesn't exist in /home/charulpd/public_html/tapjamweb/generate_code.php:17
+Stack trace:
+#0 /home/charulpd/public_html/tapjamweb/generate_code.php(17): mysqli->query('SELECT referral...')
+#1 {main}
+  thrown in /home/charulpd/public_html/tapjamweb/generate_code.php on line 17
+[03-Jul-2024 13:53:21 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'charulpd_tapjamref.referrals' doesn't exist in /home/charulpd/public_html/tapjamweb/generate_code.php:17
+Stack trace:
+#0 /home/charulpd/public_html/tapjamweb/generate_code.php(17): mysqli->query('SELECT referral...')
+#1 {main}
+  thrown in /home/charulpd/public_html/tapjamweb/generate_code.php on line 17
+[03-Jul-2024 13:53:22 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'charulpd_tapjamref.referrals' doesn't exist in /home/charulpd/public_html/tapjamweb/generate_code.php:17
+Stack trace:
+#0 /home/charulpd/public_html/tapjamweb/generate_code.php(17): mysqli->query('SELECT referral...')
+#1 {main}
+  thrown in /home/charulpd/public_html/tapjamweb/generate_code.php on line 17
+[03-Jul-2024 13:53:22 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'charulpd_tapjamref.referrals' doesn't exist in /home/charulpd/public_html/tapjamweb/generate_code.php:17
+Stack trace:
+#0 /home/charulpd/public_html/tapjamweb/generate_code.php(17): mysqli->query('SELECT referral...')
+#1 {main}
+  thrown in /home/charulpd/public_html/tapjamweb/generate_code.php on line 17
+[03-Jul-2024 13:57:15 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'charulpd_tapjamref.referrals' doesn't exist in /home/charulpd/public_html/tapjamweb/generate_code.php:17
+Stack trace:
+#0 /home/charulpd/public_html/tapjamweb/generate_code.php(17): mysqli->query('SELECT referral...')
+#1 {main}
+  thrown in /home/charulpd/public_html/tapjamweb/generate_code.php on line 17
+[03-Jul-2024 13:57:17 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'charulpd_tapjamref.users' doesn't exist in /home/charulpd/public_html/tapjamweb/initialize_user.php:21
+Stack trace:
+#0 /home/charulpd/public_html/tapjamweb/initialize_user.php(21): mysqli->prepare('SELECT taps FRO...')
+#1 {main}
+  thrown in /home/charulpd/public_html/tapjamweb/initialize_user.php on line 21
+[03-Jul-2024 13:57:19 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'charulpd_tapjamref.users' doesn't exist in /home/charulpd/public_html/tapjamweb/initialize_user.php:21
+Stack trace:
+#0 /home/charulpd/public_html/tapjamweb/initialize_user.php(21): mysqli->prepare('SELECT taps FRO...')
+#1 {main}
+  thrown in /home/charulpd/public_html/tapjamweb/initialize_user.php on line 21
+[03-Jul-2024 13:57:21 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'charulpd_tapjamref.referrals' doesn't exist in /home/charulpd/public_html/tapjamweb/generate_code.php:17
+Stack trace:
+#0 /home/charulpd/public_html/tapjamweb/generate_code.php(17): mysqli->query('SELECT referral...')
+#1 {main}
+  thrown in /home/charulpd/public_html/tapjamweb/generate_code.php on line 17
+[03-Jul-2024 13:57:23 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'charulpd_tapjamref.referrals' doesn't exist in /home/charulpd/public_html/tapjamweb/generate_code.php:17
+Stack trace:
+#0 /home/charulpd/public_html/tapjamweb/generate_code.php(17): mysqli->query('SELECT referral...')
+#1 {main}
+  thrown in /home/charulpd/public_html/tapjamweb/generate_code.php on line 17
+[03-Jul-2024 13:57:26 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'charulpd_tapjamref.referrals' doesn't exist in /home/charulpd/public_html/tapjamweb/generate_code.php:17
+Stack trace:
+#0 /home/charulpd/public_html/tapjamweb/generate_code.php(17): mysqli->query('SELECT referral...')
+#1 {main}
+  thrown in /home/charulpd/public_html/tapjamweb/generate_code.php on line 17
+[03-Jul-2024 13:57:44 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'charulpd_tapjamref.referrals' doesn't exist in /home/charulpd/public_html/tapjamweb/process_code.php:19
+Stack trace:
+#0 /home/charulpd/public_html/tapjamweb/process_code.php(19): mysqli->query('SELECT referrer...')
+#1 {main}
+  thrown in /home/charulpd/public_html/tapjamweb/process_code.php on line 19
+[03-Jul-2024 13:57:45 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'charulpd_tapjamref.referrals' doesn't exist in /home/charulpd/public_html/tapjamweb/process_code.php:19
+Stack trace:
+#0 /home/charulpd/public_html/tapjamweb/process_code.php(19): mysqli->query('SELECT referrer...')
+#1 {main}
+  thrown in /home/charulpd/public_html/tapjamweb/process_code.php on line 19
+[03-Jul-2024 13:57:46 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'charulpd_tapjamref.referrals' doesn't exist in /home/charulpd/public_html/tapjamweb/process_code.php:19
+Stack trace:
+#0 /home/charulpd/public_html/tapjamweb/process_code.php(19): mysqli->query('SELECT referrer...')
+#1 {main}
+  thrown in /home/charulpd/public_html/tapjamweb/process_code.php on line 19
+[03-Jul-2024 13:58:14 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'charulpd_tapjamref.referrals' doesn't exist in /home/charulpd/public_html/tapjamweb/generate_code.php:17
+Stack trace:
+#0 /home/charulpd/public_html/tapjamweb/generate_code.php(17): mysqli->query('SELECT referral...')
+#1 {main}
+  thrown in /home/charulpd/public_html/tapjamweb/generate_code.php on line 17
+[03-Jul-2024 13:58:17 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'charulpd_tapjamref.users' doesn't exist in /home/charulpd/public_html/tapjamweb/initialize_user.php:21
+Stack trace:
+#0 /home/charulpd/public_html/tapjamweb/initialize_user.php(21): mysqli->prepare('SELECT taps FRO...')
+#1 {main}
+  thrown in /home/charulpd/public_html/tapjamweb/initialize_user.php on line 21
+[03-Jul-2024 13:58:19 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'charulpd_tapjamref.referrals' doesn't exist in /home/charulpd/public_html/tapjamweb/generate_code.php:17
+Stack trace:
+#0 /home/charulpd/public_html/tapjamweb/generate_code.php(17): mysqli->query('SELECT referral...')
+#1 {main}
+  thrown in /home/charulpd/public_html/tapjamweb/generate_code.php on line 17
+[03-Jul-2024 14:06:52 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'charulpd_tapjamref.users' doesn't exist in /home/charulpd/public_html/tapjamweb/initialize_user.php:21
+Stack trace:
+#0 /home/charulpd/public_html/tapjamweb/initialize_user.php(21): mysqli->prepare('SELECT taps FRO...')
+#1 {main}
+  thrown in /home/charulpd/public_html/tapjamweb/initialize_user.php on line 21
+[03-Jul-2024 14:06:59 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'charulpd_tapjamref.referrals' doesn't exist in /home/charulpd/public_html/tapjamweb/process_code.php:30
+Stack trace:
+#0 /home/charulpd/public_html/tapjamweb/process_code.php(30): mysqli->query('SELECT referrer...')
+#1 {main}
+  thrown in /home/charulpd/public_html/tapjamweb/process_code.php on line 30
+[03-Jul-2024 14:07:01 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'charulpd_tapjamref.referrals' doesn't exist in /home/charulpd/public_html/tapjamweb/process_code.php:30
+Stack trace:
+#0 /home/charulpd/public_html/tapjamweb/process_code.php(30): mysqli->query('SELECT referrer...')
+#1 {main}
+  thrown in /home/charulpd/public_html/tapjamweb/process_code.php on line 30
+[03-Jul-2024 14:07:02 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'charulpd_tapjamref.referrals' doesn't exist in /home/charulpd/public_html/tapjamweb/process_code.php:30
+Stack trace:
+#0 /home/charulpd/public_html/tapjamweb/process_code.php(30): mysqli->query('SELECT referrer...')
+#1 {main}
+  thrown in /home/charulpd/public_html/tapjamweb/process_code.php on line 30
+[03-Jul-2024 14:07:02 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'charulpd_tapjamref.referrals' doesn't exist in /home/charulpd/public_html/tapjamweb/process_code.php:30
+Stack trace:
+#0 /home/charulpd/public_html/tapjamweb/process_code.php(30): mysqli->query('SELECT referrer...')
+#1 {main}
+  thrown in /home/charulpd/public_html/tapjamweb/process_code.php on line 30
+[03-Jul-2024 14:07:02 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'charulpd_tapjamref.referrals' doesn't exist in /home/charulpd/public_html/tapjamweb/process_code.php:30
+Stack trace:
+#0 /home/charulpd/public_html/tapjamweb/process_code.php(30): mysqli->query('SELECT referrer...')
+#1 {main}
+  thrown in /home/charulpd/public_html/tapjamweb/process_code.php on line 30
+[03-Jul-2024 14:07:10 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'charulpd_tapjamref.referrals' doesn't exist in /home/charulpd/public_html/tapjamweb/generate_code.php:17
+Stack trace:
+#0 /home/charulpd/public_html/tapjamweb/generate_code.php(17): mysqli->query('SELECT referral...')
+#1 {main}
+  thrown in /home/charulpd/public_html/tapjamweb/generate_code.php on line 17
+[03-Jul-2024 14:07:12 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'charulpd_tapjamref.referrals' doesn't exist in /home/charulpd/public_html/tapjamweb/generate_code.php:17
+Stack trace:
+#0 /home/charulpd/public_html/tapjamweb/generate_code.php(17): mysqli->query('SELECT referral...')
+#1 {main}
+  thrown in /home/charulpd/public_html/tapjamweb/generate_code.php on line 17
+[03-Jul-2024 14:07:12 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'charulpd_tapjamref.referrals' doesn't exist in /home/charulpd/public_html/tapjamweb/generate_code.php:17
+Stack trace:
+#0 /home/charulpd/public_html/tapjamweb/generate_code.php(17): mysqli->query('SELECT referral...')
+#1 {main}
+  thrown in /home/charulpd/public_html/tapjamweb/generate_code.php on line 17
+[03-Jul-2024 14:07:13 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'charulpd_tapjamref.referrals' doesn't exist in /home/charulpd/public_html/tapjamweb/generate_code.php:17
+Stack trace:
+#0 /home/charulpd/public_html/tapjamweb/generate_code.php(17): mysqli->query('SELECT referral...')
+#1 {main}
+  thrown in /home/charulpd/public_html/tapjamweb/generate_code.php on line 17
+[03-Jul-2024 14:07:14 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'charulpd_tapjamref.referrals' doesn't exist in /home/charulpd/public_html/tapjamweb/generate_code.php:17
+Stack trace:
+#0 /home/charulpd/public_html/tapjamweb/generate_code.php(17): mysqli->query('SELECT referral...')
+#1 {main}
+  thrown in /home/charulpd/public_html/tapjamweb/generate_code.php on line 17
+[03-Jul-2024 14:07:24 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'charulpd_tapjamref.users' doesn't exist in /home/charulpd/public_html/tapjamweb/initialize_user.php:21
+Stack trace:
+#0 /home/charulpd/public_html/tapjamweb/initialize_user.php(21): mysqli->prepare('SELECT taps FRO...')
+#1 {main}
+  thrown in /home/charulpd/public_html/tapjamweb/initialize_user.php on line 21
+[03-Jul-2024 14:07:26 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'charulpd_tapjamref.referrals' doesn't exist in /home/charulpd/public_html/tapjamweb/generate_code.php:17
+Stack trace:
+#0 /home/charulpd/public_html/tapjamweb/generate_code.php(17): mysqli->query('SELECT referral...')
+#1 {main}
+  thrown in /home/charulpd/public_html/tapjamweb/generate_code.php on line 17
+[03-Jul-2024 14:07:28 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'charulpd_tapjamref.referrals' doesn't exist in /home/charulpd/public_html/tapjamweb/generate_code.php:17
+Stack trace:
+#0 /home/charulpd/public_html/tapjamweb/generate_code.php(17): mysqli->query('SELECT referral...')
+#1 {main}
+  thrown in /home/charulpd/public_html/tapjamweb/generate_code.php on line 17
+[03-Jul-2024 14:07:29 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'charulpd_tapjamref.referrals' doesn't exist in /home/charulpd/public_html/tapjamweb/generate_code.php:17
+Stack trace:
+#0 /home/charulpd/public_html/tapjamweb/generate_code.php(17): mysqli->query('SELECT referral...')
+#1 {main}
+  thrown in /home/charulpd/public_html/tapjamweb/generate_code.php on line 17
+[03-Jul-2024 14:07:29 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'charulpd_tapjamref.referrals' doesn't exist in /home/charulpd/public_html/tapjamweb/generate_code.php:17
+Stack trace:
+#0 /home/charulpd/public_html/tapjamweb/generate_code.php(17): mysqli->query('SELECT referral...')
+#1 {main}
+  thrown in /home/charulpd/public_html/tapjamweb/generate_code.php on line 17
+[03-Jul-2024 14:07:33 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'charulpd_tapjamref.referrals' doesn't exist in /home/charulpd/public_html/tapjamweb/process_code.php:30
+Stack trace:
+#0 /home/charulpd/public_html/tapjamweb/process_code.php(30): mysqli->query('SELECT referrer...')
+#1 {main}
+  thrown in /home/charulpd/public_html/tapjamweb/process_code.php on line 30
+[03-Jul-2024 14:11:06 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'charulpd_tapjamref.users' doesn't exist in /home/charulpd/public_html/tapjamweb/initialize_user.php:21
+Stack trace:
+#0 /home/charulpd/public_html/tapjamweb/initialize_user.php(21): mysqli->prepare('SELECT taps FRO...')
+#1 {main}
+  thrown in /home/charulpd/public_html/tapjamweb/initialize_user.php on line 21
+[03-Jul-2024 14:11:16 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'charulpd_tapjamref.referrals' doesn't exist in /home/charulpd/public_html/tapjamweb/process_code.php:19
+Stack trace:
+#0 /home/charulpd/public_html/tapjamweb/process_code.php(19): mysqli->query('SELECT referrer...')
+#1 {main}
+  thrown in /home/charulpd/public_html/tapjamweb/process_code.php on line 19
+[03-Jul-2024 14:11:18 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'charulpd_tapjamref.referrals' doesn't exist in /home/charulpd/public_html/tapjamweb/process_code.php:19
+Stack trace:
+#0 /home/charulpd/public_html/tapjamweb/process_code.php(19): mysqli->query('SELECT referrer...')
+#1 {main}
+  thrown in /home/charulpd/public_html/tapjamweb/process_code.php on line 19
+[03-Jul-2024 14:11:22 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'charulpd_tapjamref.referrals' doesn't exist in /home/charulpd/public_html/tapjamweb/generate_code.php:17
+Stack trace:
+#0 /home/charulpd/public_html/tapjamweb/generate_code.php(17): mysqli->query('SELECT referral...')
+#1 {main}
+  thrown in /home/charulpd/public_html/tapjamweb/generate_code.php on line 17
+[03-Jul-2024 14:11:24 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'charulpd_tapjamref.referrals' doesn't exist in /home/charulpd/public_html/tapjamweb/generate_code.php:17
+Stack trace:
+#0 /home/charulpd/public_html/tapjamweb/generate_code.php(17): mysqli->query('SELECT referral...')
+#1 {main}
+  thrown in /home/charulpd/public_html/tapjamweb/generate_code.php on line 17
+[03-Jul-2024 14:14:09 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/charulpd/public_html/tapjamweb/process_code.php on line 32
+[03-Jul-2024 14:24:57 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/charulpd/public_html/tapjamweb/process_code.php on line 43
+[03-Jul-2024 14:27:04 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/charulpd/public_html/tapjamweb/process_code.php on line 43
+[03-Jul-2024 14:29:12 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/charulpd/public_html/tapjamweb/process_code.php on line 43
+[03-Jul-2024 14:30:19 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/charulpd/public_html/tapjamweb/process_code.php on line 43
+[03-Jul-2024 14:32:26 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/charulpd/public_html/tapjamweb/process_code.php on line 32
+[03-Jul-2024 14:32:56 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/charulpd/public_html/tapjamweb/process_code.php on line 32
+[03-Jul-2024 14:43:00 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/charulpd/public_html/tapjamweb/process_code.php on line 43
+[08-Jul-2024 04:30:23 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/charulpd/public_html/tapjamweb/staging/process_code.php on line 43
+[08-Jul-2024 04:32:22 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/charulpd/public_html/tapjamweb/staging/process_code.php on line 43
+[08-Jul-2024 04:48:20 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/charulpd/public_html/tapjamweb/staging/process_code.php on line 43
+[08-Jul-2024 04:50:59 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/charulpd/public_html/tapjamweb/staging/process_code.php on line 43

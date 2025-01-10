@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3986665396486835" crossorigin="anonymous"></script>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Withdraw</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background: radial-gradient(circle, #292036 70%, #292036 100%);
+            font-family: Arial, sans-serif;
+            color: white;
+            overflow: scroll;
+        }
+        .form-container {
+            background: white;
+            color: black;
+            padding: 70px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            margin-top: 30px;
+        }
+        .form-container h2 {
+            margin-top: 0;
+        }
+        .form-container label {
+            display: block;
+            margin-top: 10px;
+        }
+        .form-container input, .form-container select {
+            width: 100%;
+            padding-left: 25px;
+            padding-right: 25px;
+            padding-top: 10px;
+            padding-bottom: 15px;
+            margin-top: 5px;
+            border-radius: 35px;
+            border: 1px solid #ccc;
+        }
+        .form-container button {
+            background: #292036;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        .form-container small {
+            display: block;
+            margin-top: 5px;
+            color: gray;
+        }
+        .custom-alert {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: white;
+            color: black;
+            padding: 20px;
+            border: 2px solid #292036;
+            border-radius: 10px;
+            z-index: 1000;
+            text-align: center;
+        }
+        .custom-alert button {
+            margin-top: 10px;
+            padding: 5px 10px;
+            background: #292036;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3986665396486835"
+     crossorigin="anonymous"></script>
+<!-- Display ADHorizon -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3986665396486835"
+     data-ad-slot="2490498989"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+    
+    <div class="form-container">
+        <h2>Withdrawal Request</h2>
+        <form id="withdrawForm" action="/tapjamweb/process_withdrawal.php" method="POST">
+            <label for="fullName">Full Name</label>
+            <input type="text" id="fullName" name="fullName" required>
+            <small style="font-size:8px;">Ensure this name matches with your account name</small>
+            <br>
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <label for="phoneNumber">Phone Number</label>
+            <input type="text" id="phoneNumber" name="phoneNumber" required>
+            <small style="font-size:8px;">WhatsApp Number Preferred</small>
+            <br>
+            <label for="withdrawalMethod">Select Withdrawal Method</label>
+            <select id="withdrawalMethod" name="withdrawalMethod" required>
+                <option value="">Select Method</option>
+                <option value="bank">Bank Details</option>
+                <option value="paypal">PayPal</option>
+            </select>
+            <br>
+            <div id="bankDetails" style="display:none;">
+                <label for="bankName">Bank Name</label>
+                <input type="text" id="bankName" name="bankName" placeholder="Ex: Access Bank Plc">
+                <br>
+                <label for="accountNumber">Account Number</label>
+                <input type="text" id="accountNumber" name="accountNumber">
+            </div>
+            <div id="paypalDetails" style="display:none;">
+                <label for="paypalEmail">PayPal Email</label>
+                <input type="email" id="paypalEmail" name="paypalEmail" placeholder="PayPal Email Address">
+            </div>
+            <br>
+            <label for="amount">Amount</label>
+            <input type="number" id="amount" name="amount" placeholder="$ Amount in Dollars" required>
+            <small style="font-size:8px;">You Must Have Up To $10 Before Making A Request</small>
+            <br>
+            <button type="submit">Submit</button>
+        </form>
+        <button style="padding-right:80px;padding-left:80px;" onclick="window.location.href='/tapjamweb/index.html'">Go Back</button>
+    </div>
+
+    <div id="customAlert" class="custom-alert">
+        <p id="alertMessage"></p>
+        <button onclick="closeCustomAlert()">OK</button>
+    </div>
+
+    <script>
+        document.getElementById('withdrawalMethod').addEventListener('change', function() {
+            const method = this.value;
+            document.getElementById('bankDetails').style.display = method === 'bank' ? 'block' : 'none';
+            document.getElementById('paypalDetails').style.display = method === 'paypal' ? 'block' : 'none';
+        });
+
+        document.getElementById('withdrawForm').addEventListener('submit', function(e) {
+            const amount = parseFloat(document.getElementById('amount').value);
+            let balance = parseFloat(localStorage.getItem('balance')) || 0.00;
+            let count = parseInt(localStorage.getItem('count')) || 0;
+
+            if (balance < 10) {
+                showCustomAlert('<strong>You must have at least $10 to make a withdrawal request.</strong>');
+                e.preventDefault();
+                return;
+            }
+
+            if (amount > balance) {
+                showCustomAlert('<strong>You do not have enough funds to withdraw this amount.</strong>');
+                e.preventDefault();
+                return;
+            }
+
+            const newBalance = balance - amount;
+            localStorage.setItem('balance', newBalance.toFixed(2));
+            localStorage.setItem('count', 0); // Reset tap count to 0
+            showCustomAlert('<strong>Withdrawal request sent. Your new balance is $' + newBalance.toFixed(2) + '.</strong>');
+        });
+
+        function showCustomAlert(message) {
+            document.getElementById('alertMessage').innerHTML = message;
+            document.getElementById('customAlert').style.display = 'block';
+        }
+
+        function closeCustomAlert() {
+            document.getElementById('customAlert').style.display = 'none';
+        }
+    </script>
+</body>
+</html>

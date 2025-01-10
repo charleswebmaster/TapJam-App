@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3986665396486835" crossorigin="anonymous"></script> 
+    
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+   <title>Referral</title>
+   <style>
+       body {
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+           justify-content: center;
+           height: 100vh;
+           margin: 0;
+           background: linear-gradient(#0B67B5 2%, #292036 40%);
+           font-family: Arial, sans-serif;
+           color: white;
+           overflow: scroll;
+           padding-top: 50px;
+       }
+
+       .referral-container {
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+           justify-content: center;
+           background: #292036;
+           padding: 20px;
+           border-radius: 10px;
+       }
+
+       .referral-container button, .referral-container input {
+           margin: 10px;
+           padding: 10px;
+           font-size: 1em;
+       }
+
+       .referral-container input {
+           border-radius: 15px;
+           border: 1px solid #ccc;
+       }
+
+       .share-buttons {
+           display: flex;
+           justify-content: center;
+           gap: 10px;
+           margin: 20px;
+       }
+
+       .share-button {
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           width: 50px;
+           height: 50px;
+           color: #292036;
+           background-color: #FFFFFF;
+           border: none;
+           border-radius: 50%;
+           text-decoration: none;
+           font-size: 24px;
+           transition: background-color 0.3s ease;
+       }
+
+       .share-button:hover {
+           background-color: #444;
+       }
+
+       .custom-alert {
+           display: none;
+           position: fixed;
+           top: 50%;
+           left: 50%;
+           transform: translate(-50%, -50%);
+           background: white;
+           color: black;
+           padding: 20px;
+           border: 2px solid #292036;
+           border-radius: 10px;
+           z-index: 1000;
+           text-align: center;
+       }
+
+       .custom-alert button {
+           margin-top: 10px;
+           padding: 5px 10px;
+           background: #292036;
+           color: white;
+           border: none;
+           border-radius: 5px;
+           cursor: pointer;
+       }
+   </style>
+</head>
+<body>
+   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3986665396486835" crossorigin="anonymous"></script>
+   <!-- Display ADHorizon -->
+   <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3986665396486835" data-ad-slot="2490498989" data-ad-format="auto" data-full-width-responsive="true"></ins>
+   <script>
+       (adsbygoogle = window.adsbygoogle || []).push({});
+   </script>
+
+   <h1 style="text-align:center;">Share this link:</h1><br>
+   <button style="padding:10px;background-color:transparent;border-radius:30px;color:#fff;border:1px solid white;" onclick="window.location.href='/tapjamweb/docs.html#ref'">How It Works</button>
+   <div class="share-buttons">
+       <a href="https://api.whatsapp.com/send?text=Download TapJam To Play And Earn Dollars. Use My Ref Code To Get +50,000 Taps!%20https://play.google.com/store/apps/details?id=com.techex.tapjam" class="share-button" target="_blank">
+           <i class="fab fa-whatsapp"></i>
+       </a>
+       <a href="https://www.facebook.com/sharer/sharer.php?u=https://play.google.com/store/apps/details?id=com.techex.tapjam" class="share-button" target="_blank">
+           <i class="fab fa-facebook-f"></i>
+       </a>
+       <a href="https://twitter.com/intent/tweet?url=https://play.google.com/store/apps/details?id=com.techex.tapjam&text=Download TapJam To Play And Earn Dollars. Use My Ref Code To Get +50,000 Taps!" class="share-button" target="_blank">
+           <i class="fa fa-x"></i>
+       </a>
+       <button class="share-button" onclick="copyToClipboard()">
+           <i class="fas fa-copy"></i>
+       </button>
+   </div>
+
+   <br><br>
+   <div class="referral-container">
+       <marquee style="background-color:#FFF;color:green;">Exchange Your Ref Code With Your Friends To Get +50,000 Taps For Each Referral</marquee>
+
+       <h2> Referral Code</h2>
+       <button id="generateCodeButton">Show Ref Code</button>
+       <input type="text" id="referralCode" readonly>
+       <button id="copyCodeButton">Copy To Send Code</button>
+       <br><br><br><br>
+       <h2>Enter Referral Code</h2>
+       <input type="text" id="inputReferralCode" placeholder="Enter referral code">
+       <button id="submitReferralCodeButton">Proceed</button>
+   </div>
+
+   <div class="custom-alert" id="customAlert">
+       <p id="customAlertMessage"></p>
+       <button id="customAlertButton">OK</button>
+   </div>
+
+   <script>
+       const userId = localStorage.getItem('userId') || Date.now().toString();
+       localStorage.setItem('userId', userId);
+
+       const generateCodeButton = document.getElementById('generateCodeButton');
+       const referralCodeInput = document.getElementById('referralCode');
+       const copyCodeButton = document.getElementById('copyCodeButton');
+       const inputReferralCode = document.getElementById('inputReferralCode');
+       const submitReferralCodeButton = document.getElementById('submitReferralCodeButton');
+       const customAlert = document.getElementById('customAlert');
+       const customAlertMessage = document.getElementById('customAlertMessage');
+       const customAlertButton = document.getElementById('customAlertButton');
+
+       const showAlert = (message) => {
+           customAlertMessage.textContent = message;
+           customAlert.style.display = 'block';
+       };
+
+       customAlertButton.addEventListener('click', () => {
+           customAlert.style.display = 'none';
+       });
+
+       generateCodeButton.addEventListener('click', () => {
+           fetch(`/tapjamweb/generate_code.php?user_id=${userId}`)
+               .then(response => response.json())
+               .then(data => {
+                   if (data.refCode) {
+                       referralCodeInput.value = data.refCode;
+                   } else {
+                       showAlert(data.error);
+                   }
+               });
+       });
+
+       copyCodeButton.addEventListener('click', () => {
+           referralCodeInput.select();
+           document.execCommand('copy');
+           showAlert('Referral code copied to clipboard');
+       });
+
+       submitReferralCodeButton.addEventListener('click', () => {
+           const refCode = inputReferralCode.value;
+           if (refCode === referralCodeInput.value) {
+               showAlert('You cannot use your own referral code');
+               return;
+           }
+           fetch('/tapjamweb/process_code.php', {
+               method: 'POST',
+               headers: {
+                   'Content-Type': 'application/json'
+               },
+               body: JSON.stringify({ userId, refCode })
+           })
+               .then(response => response.json())
+               .then(data => {
+                   if (data.success) {
+                       localStorage.setItem('taps', data.newUserTaps);
+                       localStorage.setItem('referrerTaps', data.referrerTaps);
+                       showAlert('Referral code applied successfully. You have received +50,000 taps.');
+                       window.location.href = '/tapjamweb/index.html';
+                   } else {
+                       showAlert(data.error || 'Invalid referral code');
+                   }
+               });
+       });
+
+       fetch(`/tapjamweb/initialize_user.php?user_id=${userId}`)
+           .then(response => response.json())
+           .then(data => {
+               // Initialize user data (e.g., taps) in the frontend
+           });
+
+       function copyToClipboard() {
+           const textToCopy = 'https://play.google.com/store/apps/details?id=com.techex.tapjam';
+           navigator.clipboard.writeText(textToCopy).then(() => {
+               showAlert('Link copied to clipboard!');
+           }).catch(err => {
+               console.error('Failed to copy text: ', err);
+           });
+       }
+   </script>
+</body>
+</html>

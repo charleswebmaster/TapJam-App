@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+  <!--  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3986665396486835"
+     crossorigin="anonymous"></script> -->
+    
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tap to Earn</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(#0B67B5 2%, #292036 40%);
+            font-family: Arial, sans-serif;
+            color: white;
+            overflow: hidden;
+        }
+        .header {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            color: white;
+        }
+        .counter {
+            font-size: 20px;
+        }
+        .wallet {
+            font-size: 20px;
+        }
+        .welcome-message {
+            position: absolute;
+            top: 2px;
+            width: 100%;
+            text-align: center;
+            font-size: 15px;
+            padding: 10px;
+        }
+        .documentation {
+            position: absolute;
+            top: 60px;
+            width: 100%;
+            text-align: center;
+            font-size: 16px;
+            padding: 10px;
+        }
+        .center-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            flex: 1;
+        }
+        .dollar-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: transform 0.1s;
+        }
+        .dollar-image:active {
+            transform: scale(0.9);
+        }
+        .progress-bar {
+            width: 100%;
+            height: 10px;
+            background: #e0e0e0;
+            border-radius: 5px;
+            overflow: hidden;
+            margin-top: 20px;
+        }
+        .progress-bar > div {
+            height: 100%;
+            background: green;
+            width: 100%;
+        }
+        .progress-text {
+            margin-top: 5px;
+            font-size: 1em;
+        }
+        .form-popup {
+            display: none;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: white;
+            padding: 20px;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            transform: translateY(100%);
+            transition: transform 0.3s;
+        }
+        .form-popup.active {
+            transform: translateY(0);
+        }
+        .form-container {
+            display: flex;
+            flex-direction: column;
+        }
+        .form-container h2 {
+            margin-top: 0;
+            color: black;
+        }
+        .form-container label {
+            margin-top: 10px;
+            color: black;
+        }
+        .form-container input {
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .form-container .btn {
+            background: transparent;
+            color: black;
+            border: 2px solid black;
+            border-radius: 40px;
+            padding: 10px;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+        .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: none;
+            border: none;
+            font-size: 20px;
+            cursor: pointer;
+            color: black;
+        }
+        .bottom-buttons {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            padding: 20px;
+        }
+        .nav-button {
+            background: transparent;
+            border: 2px solid white;
+            color: white;
+            border-radius: 10px;
+            padding: 20px;
+            cursor: pointer;
+            font-size: 1em;
+            width: 80px;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .nav-button:active {
+            border-color: yellow;
+        }
+        .fly-out {
+            position: absolute;
+            color: white;
+            font-size: 1.5em;
+            animation: fly 0.5s forwards;
+        }
+        @keyframes fly {
+            0% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+            100% {
+                opacity: 0;
+                transform: translateY(-100px);
+            }
+        }
+        .toast {
+            position: fixed;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 15px;
+            border-radius: 5px;
+            display: none;
+            z-index: 1000;
+        }
+        img:active, a:active {
+            outline: none;
+            border: none;
+        }
+        .custom-alert {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: white;
+            color: black;
+            padding: 20px;
+            border: 2px solid #292036;
+            border-radius: 10px;
+            z-index: 1000;
+            text-align: center;
+        }
+        .custom-alert button {
+            margin-top: 10px;
+            padding: 5px 10px;
+            background: #292036;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    
+    
+    
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3986665396486835"
+     crossorigin="anonymous"></script>
+<!-- Display TextImage -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3986665396486835"
+     data-ad-slot="1063673269"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+    
+    
+    
+    <div class="header">
+        <div style="padding:15px;" class="counter" id="counter">0</div>
+        <div style="padding:15px;" class="wallet" id="wallet">$0.00</div>
+    </div>
+    <div class="welcome-message" id="welcomeMessage">Welcome!</div><br>
+    <div class="documentation">
+        <button style="padding:10px;background-color:transparent;border-radius:30px;color:#fff;border:1px solid white;" onclick="window.location.href='/tapjamweb/docs.html'">How To Use</button>&nbsp;&nbsp;&nbsp;&nbsp;
+        <button style="padding:10px;background-color:transparent;border-radius:30px;color:#fff;border:1px solid white;" onclick="window.location.href='mailto:support.tapjam@techex.com.ng?subject=TapJam App Report Issue&body=Hi, I would like to report an issue I found on TapJam App.'">Report App Issue</button><br><br>
+       <marquee style="font-weight:700;"> $10 Payout Threshold | Please use the referral option first before you start tapping. Click "How To Use" to learn more.</marquee>
+    </div>
+    <div class="center-container">
+        <img src="/tapjamweb/palmdollar.png" alt="Dollar" class="dollar-image" id="dollarImage">
+        <div class="progress-bar" id="progressBar">
+            <div></div>
+        </div>
+        <div class="progress-text" id="progressText">1000/1000</div>
+    </div>
+    <div class="form-popup" id="withdrawForm">
+        <form class="form-container" method="post" action="/tapjamweb/process_form.php" id="withdrawFormElem">
+            <h2>Withdraw</h2>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            <label for="phone">Phone</label>
+            <input type="text" id="phone" name="phone" required>
+            <label for="bank">Bank Name</label>
+            <input type="text" id="bank" name="bank" required>
+            <label for="account">Account Number</label>
+            <input type="text" id="account" name="account" required>
+            <button type="button" class="btn" id="sendButton">Withdraw</button>
+            <button type="button" class="close-btn" id="closeWithdrawForm">&times;</button>
+        </form>
+    </div>
+    <div class="toast" id="referralToast">Sorry, you can refer again in 1 hour</div>
+    <div class="toast" id="boostToast">Sorry, you can only boost once every 24 hours</div>
+    
+    <div class="bottom-buttons">
+        <button class="nav-button" id="referralButton"><i class="fa fa-share"></i></button>
+        <button class="nav-button" id="homeButton"><i class="fa fa-refresh"></i></button>
+        <button class="nav-button" id="superBoostButton"><i class="fa fa-rocket"></i></button>
+        <button class="nav-button" id="withdrawButton"><i class="fa fa-wallet"></i></button>
+    </div>
+
+    <div class="custom-alert" id="customAlert">
+        <p id="customAlertMessage"></p>
+        <button id="customAlertButton">OK</button>
+    </div>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+    const userId = localStorage.getItem('userId') || Date.now().toString();
+    localStorage.setItem('userId', userId);
+
+    let count = parseInt(localStorage.getItem('count')) || 0;
+    let balance = (count / 1000000) * 0.0005;
+    
+    if (localStorage.getItem('taps')) {
+        count = parseInt(localStorage.getItem('taps'));
+        localStorage.removeItem('taps');
+    }
+
+    if (localStorage.getItem('referrerTaps')) {
+        localStorage.removeItem('referrerTaps');
+    }
+
+    const counterElement = document.getElementById('counter');
+    const walletElement = document.getElementById('wallet');
+    const dollarImage = document.getElementById('dollarImage');
+    const progressBar = document.getElementById('progressBar').firstElementChild;
+    const progressText = document.getElementById('progressText');
+    const withdrawForm = document.getElementById('withdrawForm');
+    const welcomeMessage = document.getElementById('welcomeMessage');
+    const referralButton = document.getElementById('referralButton');
+    const boostButton = document.getElementById('superBoostButton');
+    const withdrawButton = document.getElementById('withdrawButton');
+    const referralToast = document.getElementById('referralToast');
+    const boostToast = document.getElementById('boostToast');
+    const customAlert = document.getElementById('customAlert');
+    const customAlertMessage = document.getElementById('customAlertMessage');
+    const customAlertButton = document.getElementById('customAlertButton');
+
+    const updateUI = () => {
+        counterElement.textContent = formatNumberWithCommas(count);
+        walletElement.textContent = `$${balance.toFixed(4)}`;
+    };
+
+    const showFlyOut = (text, x, y) => {
+        const flyOut = document.createElement('div');
+        flyOut.className = 'fly-out';
+        flyOut.textContent = text;
+        flyOut.style.left = `${x}px`;
+        flyOut.style.top = `${y}px`;
+        document.body.appendChild(flyOut);
+        setTimeout(() => document.body.removeChild(flyOut), 500);
+    };
+
+    const formatNumberWithCommas = (num) => {
+        return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    };
+
+    const showAlert = (message) => {
+        customAlertMessage.textContent = message;
+        customAlert.style.display = 'block';
+    };
+
+    customAlertButton.addEventListener('click', () => {
+        customAlert.style.display = 'none';
+    });
+
+    dollarImage.addEventListener('click', (e) => {
+        const increment = 100; // Each tap adds 100 to the count
+        count += increment;
+        balance = (count / 1000000) * 0.0005;
+        localStorage.setItem('count', count);
+        updateUI();
+        updateProgressBar();
+        const rect = dollarImage.getBoundingClientRect();
+        const flyOutX = rect.left + rect.width / 2;
+        const flyOutY = rect.top - 20;
+        showFlyOut(`+${increment}`, flyOutX, flyOutY);
+    });
+
+    const updateProgressBar = () => {
+        const progress = (count % 1000) / 1000;
+        progressBar.style.width = `${progress * 100}%`;
+        progressText.textContent = `${1000 - (count % 1000)}/1000`;
+    };
+
+    updateProgressBar();
+
+    referralButton.addEventListener('click', async () => {
+        window.location.href = '/tapjamweb/referral.html';
+    });
+
+    boostButton.addEventListener('click', () => {
+        const lastBoost = localStorage.getItem('lastBoost');
+        const oneDay = 24 * 60 * 60 * 1000;
+        if (lastBoost && Date.now() - lastBoost < oneDay) {
+            boostToast.style.display = 'block';
+            setTimeout(() => boostToast.style.display = 'none', 3000);
+            return;
+        }
+        localStorage.setItem('lastBoost', Date.now());
+        count += 20000; // Add 20,000 taps for each boost
+        balance = (count / 1000000) * 0.0005;
+        localStorage.setItem('count', count);
+        updateUI();
+        updateProgressBar();
+    });
+
+    withdrawButton.addEventListener('click', () => {
+        window.location.href = '/tapjamweb/withdraw.html';
+    });
+
+    homeButton.addEventListener('click', () => {
+        window.location.href = '/tapjamweb/index.html';
+    });
+
+    document.getElementById('closeWithdrawForm').addEventListener('click', () => {
+        withdrawForm.classList.remove('active');
+    });
+
+    const showFirstNameForm = () => {
+        if (!localStorage.getItem('firstName')) {
+            document.getElementById('firstNameForm').classList.add('active');
+        }
+    };
+
+    document.getElementById('submitFirstName').addEventListener('click', () => {
+        const firstNameInput = document.getElementById('firstNameInput').value.trim();
+        if (firstNameInput) {
+            localStorage.setItem('firstName', firstNameInput);
+            document.getElementById('firstNameForm').classList.remove('active');
+            welcomeMessage.textContent = `Welcome, ${firstNameInput}`;
+        }
+    });
+
+    showFirstNameForm();
+    const firstName = localStorage.getItem('firstName');
+    if (firstName) {
+        welcomeMessage.textContent = `Welcome, ${firstName}`;
+    }
+
+    updateUI();
+
+    // Timer logic to add $0.0010 every hour
+    const lastUpdateTime = parseInt(localStorage.getItem('lastUpdateTime')) || Date.now();
+    setInterval(() => {
+        const currentTime = Date.now();
+        const elapsedTime = currentTime - lastUpdateTime;
+        if (elapsedTime >= 3600000) { // 1 hour in milliseconds
+            balance += 0.0010;
+            localStorage.setItem('count', Math.round(balance / 0.0005 * 1000000));
+            localStorage.setItem('lastUpdateTime', Date.now());
+            updateUI();
+            updateProgressBar();
+        }
+    }, 1000);
+});
+</script>
+
+</body>
+</html>
